@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/TakeScoop/SwiftyRSA.git", :tag => s.version }
   s.source_files = "Source/*.{swift,m,h}"
   s.exclude_files = "Source/SwiftyRSA+ObjC.swift"
+  s.public_header_files = 'Source/**/*.h'
   s.framework = "Security"
   s.requires_arc = true
 
